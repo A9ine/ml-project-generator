@@ -3,3 +3,5 @@ openml
 pandas
 scikit-learn
 numpy<2.0.0
+torch
+transformers
