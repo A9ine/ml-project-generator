@@ -17,17 +17,17 @@ const TestimonialsSection = () => (
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <TestimonialCard
-          name="Callum Gay"
+          name="Callum Jones"
           image={user1}
           quote="MLNotebookGen has revolutionized how I learn ML concepts. The customized projects and real datasets make practice so much more engaging!"
         />
         <TestimonialCard
-          name="Minecraft Enjoyer"
+          name="Dylan Houle"
           image={user2}
           quote="The customization options are endless. I love how intuitive and user-friendly the platform is."
         />
         <TestimonialCard
-          name="Asian Boy"
+          name="Andrew Zhang"
           image={user3}
           quote="As a beginner, the interactive coding experience with guidance has boosted my confidence in tackling complex ML topics. It's like having a personal tutor!"
         />

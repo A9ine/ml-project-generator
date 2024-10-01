@@ -15,12 +15,12 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Features', href: '/features' },
-    { name: 'Pricing', href: '/pricing' },
-    { name: 'Contact', href: '/contact' },
-  ];
+  // const navItems = [
+  //   { name: 'Home', href: '/' },
+  //   { name: 'Features', href: '/features' },
+  //   { name: 'Pricing', href: '/pricing' },
+  //   { name: 'Contact', href: '/contact' },
+  // ];
 
   return (
     <motion.header 
@@ -39,12 +39,12 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img src="/api/placeholder/32/32" alt="MLNotebookGen Logo" className="w-8 h-8 mr-2" />
+              {/* <img src="/api/placeholder/32/32" alt="MLNotebookGen Logo" className="w-8 h-8 mr-2" /> */}
               <span className="text-xl font-bold text-gray-800 text-shadow">MLNotebookGen</span>
             </motion.div>
           </Link>
           
-          <nav className="hidden md:block">
+          {/* <nav className="hidden md:block">
             <ul className="flex space-x-8">
               {navItems.map((item) => (
                 <motion.li key={item.name} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -63,7 +63,7 @@ const Header = () => {
                 </motion.li>
               ))}
             </ul>
-          </nav>
+          </nav> */}
           
           <div className="md:hidden">
             <motion.button 
@@ -87,7 +87,7 @@ const Header = () => {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <ul className="bg-white shadow-lg py-2">
+            {/* <ul className="bg-white shadow-lg py-2">
               {navItems.map((item) => (
                 <motion.li 
                   key={item.name} 
@@ -103,7 +103,7 @@ const Header = () => {
                   </Link>
                 </motion.li>
               ))}
-            </ul>
+            </ul> */}
           </motion.nav>
         )}
       </AnimatePresence>

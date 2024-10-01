@@ -69,7 +69,7 @@ const Sidebar = () => {
             text="New Project" 
             onClick={() => handleNavigation('/new-project')}
           />
-          <SidebarLink 
+          {/* <SidebarLink 
             icon={<User className="w-5 h-5" />} 
             text="Profile" 
             onClick={() => handleNavigation('/profile')}
@@ -78,7 +78,7 @@ const Sidebar = () => {
             icon={<Settings className="w-5 h-5" />} 
             text="Settings" 
             onClick={() => handleNavigation('/settings')}
-          />
+          /> */}
           <SidebarLink 
             icon={<LogOut className="w-5 h-5" />} 
             text="Logout" 

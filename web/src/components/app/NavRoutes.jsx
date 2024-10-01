@@ -7,6 +7,7 @@ import ForgotPasswordPage from '../../pages/forgotpassword/ForgotPassword';
 import Dashboard from '../../pages/dashboard/dashboard';
 import CreateProject from '../../pages/create-project/CreateProjectPage';
 import Profile from '../../pages/profile/ProfilePage';
+import ProjectDetails from '../../pages/projectpage/ProjectDetails';
 
 const isAuthenticated = () => {
     const authData = localStorage.getItem('authToken');
@@ -46,6 +47,7 @@ const NavRoutes = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/new-project" element={<CreateProject/>} />
           <Route path="/profile" element={<Profile/>} />
+          <Route path="/Project" element ={<ProjectDetails/>}/>
         </Route>
 
         {/* Catch-all route for 404 */}
