@@ -53,7 +53,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('https://chief-hot-panda.ngrok-free.app/get-projects?user_id=1',{headers: {
+        const response = await axios.get('http://127.0.0.1:2323/get-projects?user_id=1',{headers: {
           'ngrok-skip-browser-warning': '69420'
         }});
         console.log(response.data)

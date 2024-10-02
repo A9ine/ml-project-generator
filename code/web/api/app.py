@@ -277,7 +277,7 @@ def your_post_processing_function():
 
 
     model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name="./drive/Shareddrives/nvidia_hack/nvidia_ai/data_generator_model/model",
+        model_name="../../../model/data_generator_model/model",
         max_seq_length=2048,  # Adjust this based on your model's configuration
         dtype=None,
         load_in_4bit=True,
@@ -362,7 +362,7 @@ def data_to_notebook(relationship, df, theme, algorithm, project_id):
   algorithm= 'logistic regression'
   model, tokenizer = FastLanguageModel.from_pretrained(
     # model_name = "/content/drive/MyDrive/nvidia_ai/model",
-    model_name = "/content/drive/Shareddrives/nvidia_hack/nvidia_ai/notebook_generator_model/model",
+    model_name = "../../../model/data_generator_model/model/notebook_generator_model/model",
     max_seq_length = 2048,  # Adjust this based on your model's configuration
     dtype = None,
     load_in_4bit = True,

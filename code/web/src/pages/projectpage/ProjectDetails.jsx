@@ -50,7 +50,7 @@ const ProjectDetails = () => {
       setIsLoading(true);
       try {
         console.log('Fetching project details...');
-        const response = await axios.get(`https://chief-hot-panda.ngrok-free.app/get-notebook?project_id=${projectId}`, {
+        const response = await axios.get(`http://127.0.0.1:2323/get-notebook?project_id=${projectId}`, {
           headers: {
             'ngrok-skip-browser-warning': '69420'
           }
@@ -99,17 +99,17 @@ const ProjectDetails = () => {
 
   const handleDownloadNotebook = () => {
     console.log('Download notebook button clicked');
-    handleDownload(`https://chief-hot-panda.ngrok-free.app/download-notebook?project_id=${projectId}`, 'notebook');
+    handleDownload(`http://127.0.0.1:2323/download-notebook?project_id=${projectId}`, 'notebook');
   };
 
   const handleDownloadDataset = () => {
     console.log('Download dataset button clicked');
-    handleDownload(`https://chief-hot-panda.ngrok-free.app/download-csv?project_id=${projectId}`, 'dataset');
+    handleDownload(`http://127.0.0.1:2323/download-csv?project_id=${projectId}`, 'dataset');
   };
 
   const handleCompleteProject = async () => {
     try {
-      const response = await axios.post(`https://chief-hot-panda.ngrok-free.app/complete-project`, 
+      const response = await axios.post(`http://127.0.0.1:2323/complete-project`, 
         { project_id: projectId },
         {
           headers: {

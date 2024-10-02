@@ -83,7 +83,7 @@ const CreateProject = () => {
     setTimeRemaining(150); // Reset the timer
   
     try {
-      const response = await axios.post('https://chief-hot-panda.ngrok-free.app/generate-data', {
+      const response = await axios.post('http://127.0.0.1:2323/generate-data', {
         theme: projectTheme,
         algorithm: selectedAlgorithm,
       }, {
