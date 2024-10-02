@@ -40,6 +40,8 @@ Our notebook generation process follows a sophisticated pipeline:
 7. Notebook Creation: Using libraries like nbformat and re, we assemble the code and text into a proper Jupyter notebook structure.  
 8. File Conversion: The final step converts the notebook into a downloadable .ipynb file that users can run.
 
+![Pipelilne](/pipeline.jpg)
+
 ## **Key Features**
 
 1. Personalized Learning: Users can specify the ML algorithm they want to practice and the theme they're interested in, ensuring a relevant and engaging learning experience.  
