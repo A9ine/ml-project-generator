@@ -1,7 +1,8 @@
 # ML Notebook Generator
 
-## Overview
-The ML Notebook Generator is an AI-driven system that creates personalized Jupyter notebooks for hands-on machine learning practice. Users can select a machine learning algorithm (currently linear or logistic regression) and specify a project theme. The system then generates tailored datasets and code based on the selected algorithm and theme.
+## Overview 
+The ML Notebook Generator is an AI-driven system that creates personalized Jupyter notebooks for hands-on machine learning practice. Users can select a machine learning algorithm (currently linear or logistic regression) and specify a project theme. The system then generates tailored datasets and code based on the selected algorithm and theme. For more detailed information check out our [blog.](https://github.com/A9ine/ml-project-generator/blob/main/blog.md)
+
 
 ## Features
 - **Personalized Learning**: Users can choose the ML algorithm and project theme to create a customized learning experience.
